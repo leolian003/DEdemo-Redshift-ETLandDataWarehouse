@@ -28,9 +28,7 @@ This is an ETL pipeline that extracts log data from AWS S3, stages it in AWS Red
     * create_tables
     * etl.py
 
-4. Log into the AWS console and use query editor to conduct data analysis. 
-
-4.1 Alternatively, use troubleshooting.ipynb in this repo to explore the database. 
+4. Log into the AWS console and use query editor to conduct data analysis. (Alternatively, use `troubleshooting.ipynb` in this repo to explore the database.)
 
 ## Project Background
 
