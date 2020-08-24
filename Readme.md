@@ -1,4 +1,4 @@
-# Redshift: A solution to data warehouse
+# ETL pipeline for a redshift-based Data Warehouse
 
 ## Overview 
 
