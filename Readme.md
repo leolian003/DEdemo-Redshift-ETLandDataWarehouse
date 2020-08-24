@@ -6,31 +6,31 @@ This is an ETL pipeline that extracts log data from AWS S3 which is staged tempo
 
 ## Getting started
 
-    1. Based on Step1 - Step5 of [getting started guide](https://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html), you should create a Redshift cluster and keep important information on record. 
-        * When creating an IAM Role (step 2), makes Redshift able to access S3 bucket (ReadOnly). 
-        * When creating the Redshift Cluster, select:
-            * "dc2.large" as node type
-            * "multi-node" as cluster type
-            * "4" as number of nodes
-        * After the cluster is successfully created, take down the following key information 
-            * Endpoint that hosts the cluster (*.REGION.redshift.amazonaws.com)
-            * Redshift IAM Role's ARN: arn:aws:iam::*:role/*
-            * Database Name
-            * Database User Name
-            * Access Password
-            * Database PORT (eg. 5439)
+1. Based on Step1 - Step5 of [getting started guide](https://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html), you should create a Redshift cluster and keep important information on record. 
+* When creating an IAM Role (step 2), makes Redshift able to access S3 bucket (ReadOnly). 
+* When creating the Redshift Cluster, select:
+    * "dc2.large" as node type
+    * "multi-node" as cluster type
+    * "4" as number of nodes
+* After the cluster is successfully created, take down the following key information 
+    * Endpoint that hosts the cluster (*.REGION.redshift.amazonaws.com)
+    * Redshift IAM Role's ARN: arn:aws:iam::*:role/*
+    * Database Name
+    * Database User Name
+    * Access Password
+    * Database PORT (eg. 5439)
 
-    2. Edit the open field of AWS-setup.cfg in this repo. 
-        * Put cluster endpoint in the "Host" field.
-        * Other fields are straightforward.
+2. Edit the open field of AWS-setup.cfg in this repo. 
+* Put cluster endpoint in the "Host" field.
+* Other fields are straightforward.
 
-    3. To build the pipeline, run the python scripts in the following order:
-        * create_tables
-        * etl.py
+3. To build the pipeline, run the python scripts in the following order:
+* create_tables
+* etl.py
 
-    4. Log into the AWS console and use query editor to conduct data analysis. 
+4. Log into the AWS console and use query editor to conduct data analysis. 
 
-    4.1 Alternatively, use troubleshooting.ipynb in this repo to explore the database. 
+4.1 Alternatively, use troubleshooting.ipynb in this repo to explore the database. 
 
 ## Project Background
 
@@ -52,12 +52,12 @@ The client provides several use cases of this data warehouse:
 
 Based on the demands, we can develop four dimensional tables and one star tables for the data warehouse. They are:  
 
-        * factSongPlays: songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent
-        * dimSong: song_id, title, artist_id, year, duration
-        * dimArtist: artist_id, name, location, latitude, longitude
-        * dimUser: user_id, first_name, last_name, gender, level
-        * dimTime: start_time, hour, day, week, month, year, weekday
-        * dimLocation (optional): Locid, Location, city, county, state, country,longitude, latitude
+    * factSongPlays: songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent
+    * dimSong: song_id, title, artist_id, year, duration
+    * dimArtist: artist_id, name, location, latitude, longitude
+    * dimUser: user_id, first_name, last_name, gender, level
+    * dimTime: start_time, hour, day, week, month, year, weekday
+    * dimLocation (optional): Locid, Location, city, county, state, country,longitude, latitude
 
 
 ## Overview of data source
