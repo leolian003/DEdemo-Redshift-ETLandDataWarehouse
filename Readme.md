@@ -14,7 +14,7 @@ This is an ETL pipeline that extracts log data from AWS S3, stages it in AWS Red
         * "4" as number of nodes
     * After the cluster is successfully created, take down the following key information 
         * Endpoint that hosts the cluster (`*.REGION.redshift.amazonaws.com`)
-        * Redshift IAM Role's ARN: 'arn:aws:iam::*:role/*'
+        * Redshift IAM Role's ARN: `arn:aws:iam::*:role/*`
         * Database Name
         * Database User Name
         * Access Password
