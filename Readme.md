@@ -6,7 +6,7 @@ This is an ETL pipeline that extracts log data from AWS S3, stages it in AWS Red
 
 ## Getting started
 
-1. Based on Step1 - Step5 of [getting started guide](https://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html), you should create a Redshift cluster and keep important information on record. 
+1. Based on Step1 - Step5 of AWS's[guideline](https://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html), create a Redshift cluster and keep important information on record. 
     * When creating an IAM Role (step 2), makes Redshift able to access S3 bucket (ReadOnly). 
     * When creating the Redshift Cluster, select:
         * "dc2.large" as node type
