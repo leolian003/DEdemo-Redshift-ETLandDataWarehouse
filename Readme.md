@@ -21,7 +21,7 @@ This is an ETL pipeline that extracts log data from AWS S3, stages it in AWS Red
         * Database PORT (eg. 5439)
 
 2. Edit the open field of AWS-setup.cfg in this repo. 
-    * Put cluster endpoint in the "Host" field.
+    * Put `endpoint` in the "Host" field.
     * Other fields are straightforward.
 
 3. To build the pipeline, run the python scripts in the following order:
