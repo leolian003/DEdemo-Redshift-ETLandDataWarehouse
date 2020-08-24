@@ -2,7 +2,7 @@
 
 ## Overview 
 
-This is an ETL pipeline that extracts log data from AWS S3 which is staged temporaily in AWS Redshift, and is transformed into dimensional tables for further data analysis. This project is a part of [Udacity's Data Engineering nanodegree](https://eu.udacity.com/course/data-engineer-nanodegree--nd027).
+This is an ETL pipeline that extracts log data from AWS S3, stages it in AWS Redshift, and transforms it into dimensional tables for further data analysis. This project is a part of [Udacity's Data Engineering nanodegree](https://eu.udacity.com/course/data-engineer-nanodegree--nd027).
 
 ## Getting started
 
