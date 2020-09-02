@@ -38,8 +38,6 @@ As requested by a hypothetical music streaming service startup, Sparkify, we are
 
 A data warehouse (OLAP) is hosted on the AWS Redshift, which is a columnar database based on open source PostgreSQL. Before being brought to the redshift, the input data source is staged at AWS S3 (in json format) to accomodate the transition between different RBDMS. 
 
-[liuchengtu.png]
-
 ## Data Warehouse design based on customer's demand
 
 The client provides several use cases of this data warehouse: 
@@ -64,11 +62,9 @@ Based on the demands, we can develop four dimensional tables and one star tables
 
 Hosted in S3 (s3://udacity-dend/log_data), the log data contains user's activity in the app, in the scope of this project we only care about the app usage when "Next Song" button is hitted (by users)
 
-[jietu.png]
 
 ### Song metadata
 
 Hosted in S3 (s3://udacity-dend/song_data), the song metadata contains the basic information of songs and related artists.
 
-[jietu.png]
 
